@@ -38,7 +38,7 @@
             android:value="@string/google_maps_key" />
 
         <service
-            android:name="xmpp.XmppConnect"
+            android:name="xmpp.XmppService"
             android:enabled="true"
             android:exported="true" >
         </service>

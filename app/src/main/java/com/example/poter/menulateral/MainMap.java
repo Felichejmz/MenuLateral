@@ -20,7 +20,7 @@ import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.model.LatLng;
 
-import xmpp.XmppConnect;
+import xmpp.XmppService;
 
 public class MainMap extends Fragment{
 
@@ -57,7 +57,7 @@ public class MainMap extends Fragment{
         btnConnect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                getActivity().startService(new Intent(getActivity(),XmppConnect.class));
+                getActivity().startService(new Intent(getActivity(), XmppService.class));
                 myDialog = new ProgressDialog(v.getContext());
                 myDialog.setMessage("Conectando al servidor .....");
                 myDialog.setCancelable(false);
