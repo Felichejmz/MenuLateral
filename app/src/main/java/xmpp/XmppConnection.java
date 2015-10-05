@@ -203,8 +203,8 @@ public class XmppConnection implements ConnectionListener, ChatManagerListener, 
             public void onReceive(Context context, Intent intent) {
                 String action = intent.getAction();
                 if(action.equals(XmppService.SEND_MESSAGE)){
-                    sendMessage(intent.getStringExtra(XmppService.BUNDLE_MESSAGE_BODY),intent.getStringExtra(XmppService.BUNDLE_TO));
-
+                    sendMessage(intent.getStringExtra(XmppService.BUNDLE_MESSAGE_BODY),
+                            intent.getStringExtra(XmppService.BUNDLE_TO));
                 }
             }
         };

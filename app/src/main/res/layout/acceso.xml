@@ -11,11 +11,12 @@
         <TextView
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Autenticación"
+            android:text="Acceso"
             android:id="@+id/tvAutentiaTitulo"
             android:layout_gravity="center_horizontal"
             android:gravity="center"
             android:textSize="@android:dimen/app_icon_size" />
+
     </TableRow>
 
     <TableLayout
@@ -36,7 +37,7 @@
             <EditText
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText" />
+                android:id="@+id/etAccesoUser" />
 
         </TableRow>
 
@@ -55,10 +56,21 @@
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 android:ems="10"
-                android:id="@+id/editText2" />
+                android:id="@+id/etAccesoPasswd" />
         </TableRow>
 
     </TableLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Conectarse"
+            android:id="@+id/btnAccesoConectar" />
+    </TableRow>
 
     <TableLayout
         android:layout_width="match_parent"
@@ -96,9 +108,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
-                android:text="Name"
                 android:ems="10"
-                android:id="@+id/editText4" />
+                android:id="@+id/etAccesoName" />
         </TableRow>
 
         <TableRow
@@ -116,7 +127,7 @@
                 android:layout_height="wrap_content"
                 android:inputType="phone"
                 android:ems="10"
-                android:id="@+id/editText3" />
+                android:id="@+id/etAccesoCelular" />
 
         </TableRow>
 
@@ -133,7 +144,7 @@
             <EditText
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText5" />
+                android:id="@+id/etAccesoPlacas" />
 
         </TableRow>
 

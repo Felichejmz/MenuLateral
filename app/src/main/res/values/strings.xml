@@ -9,23 +9,26 @@
 
         <!-- Nombres de los items -->
         <string-array name="nav_drawer_items">
-            <item >Principal</item>
-            <item >Autenticar</item>
+            <item >Estado</item>
+            <item >Acceso</item>
             <item >Actividades</item>
             <item >Estado</item>
+            <item >Servicios</item>
         </string-array>
 
         <!-- Iconos de los items -->
         <array name="nav_drawer_icons">
-            <item>@drawable/ic_whats_hot</item>
+            <item>@drawable/ic_drawer</item>
             <item>@drawable/ic_people</item>
             <item>@drawable/ic_photos</item>
             <item>@drawable/ic_communities</item>
+            <item>@drawable/ic_whats_hot</item>
         </array>
 
         <!-- Content Description -->
         <string name="desc_list_item_icon">Item Icon</string>
     <string name="title_activity_maps">Map</string>
 
-
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

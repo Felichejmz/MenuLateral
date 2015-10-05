@@ -18,12 +18,17 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import fragments.Autenticacion;
+import fragments.Acceso;
 import fragments.Estado;
+import fragments.MainMap;
 import fragments.Servicios;
+import fragments.WaitService;
 
 
-public class MyActivity extends Activity {
+public class MainActivity extends Activity {
+
+    View view;
+
     private DrawerLayout mDrawerLayout;
     private ListView mDrawerList;
     private ActionBarDrawerToggle mDrawerToggle;
@@ -70,6 +75,8 @@ public class MyActivity extends Activity {
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[2], navMenuIcons.getResourceId(2, -1), true, "Estrenos"));
         // Contacto
         navDrawerItems.add(new NavDrawerItem(navMenuTitles[3], navMenuIcons.getResourceId(3, -1)));
+        // Espera servicios
+        navDrawerItems.add(new NavDrawerItem(navMenuTitles[4], navMenuIcons.getResourceId(4, -1)));
 
         // Recycle the typed array
         navMenuIcons.recycle();
@@ -164,16 +171,19 @@ public class MyActivity extends Activity {
         FragmentActivity fragmentActivity = null;
         switch (position) {
             case 0:
-                fragment = new MainMap();
+                fragment = new Estado();
                 break;
             case 1:
-                fragment = new Autenticacion();
+                fragment = new Acceso();
                 break;
             case 2:
                 fragment = new Servicios();
                 break;
             case 3:
-                fragment = new Estado();
+                fragment = new MainMap();
+                break;
+            case 4:
+                fragment = new WaitService();
                 break;
 
             default:
@@ -221,5 +231,4 @@ public class MyActivity extends Activity {
         // Pass any configuration change to the drawer toggls
         mDrawerToggle.onConfigurationChanged(newConfig);
     }
-
 }

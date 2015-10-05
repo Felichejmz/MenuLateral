@@ -1,4 +1,4 @@
-package com.example.poter.menulateral;
+package fragments;
 
 
 import android.app.Fragment;
@@ -13,12 +13,16 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.poter.menulateral.R;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.MapView;
 import com.google.android.gms.maps.MapsInitializer;
 import com.google.android.gms.maps.model.LatLng;
+
+import org.jivesoftware.smack.ConnectionListener;
+
 
 import xmpp.XmppService;
 
@@ -71,7 +75,6 @@ public class MainMap extends Fragment{
                 myDialog.show();
             }
         });
-
         return  v;
     }
 
